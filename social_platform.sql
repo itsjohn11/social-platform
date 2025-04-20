@@ -16,6 +16,11 @@ FROM `posts`
 INNER JOIN `likes`
 ON `posts`.`id`= `likes`.`post_id`
 (da completare)
+SELECT `post_id`,COUNT(*)
+FROM `posts`
+INNER JOIN `likes`
+ON `posts`.`id`= `likes`.`post_id`
+GROUP BY `post_id`;
 
 -- 4 Ordina gli utenti per il numero di media caricati (25)
 SELECT *

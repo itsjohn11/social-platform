@@ -15,7 +15,8 @@ SELECT *
 FROM `posts`
 INNER JOIN `likes`
 ON `posts`.`id`= `likes`.`post_id`
-(da completare)
+-- (da completare)
+
 SELECT `post_id`,COUNT(*)
 FROM `posts`
 INNER JOIN `likes`
